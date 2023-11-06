@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class Agenda {
     //Des fantaisies
+    // qu'est ce c'est que ces fataisie?
     /**
      * Adds an event to this agenda
      *

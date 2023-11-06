@@ -15,7 +15,7 @@ public class Event {
     private LocalDateTime myStart;
 
     /**
-     * The durarion of the event 
+     * The durarion of the event
      */
     private Duration myDuration;
 
@@ -39,6 +39,7 @@ public class Event {
      * @param aDay the day to test
      * @return true if the event occurs on that day, false otherwise
      */
+
     public boolean isInDay(LocalDate aDay) {
         boolean res = false;
         LocalDate start = myStart.toLocalDate();

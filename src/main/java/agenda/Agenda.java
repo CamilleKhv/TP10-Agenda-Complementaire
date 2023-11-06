@@ -10,7 +10,7 @@ public class Agenda {
     private ArrayList<Event> theEvents = new ArrayList<Event>();
 
     public Agenda() {
-        this.theEvents = null;
+
     }
 
     /**

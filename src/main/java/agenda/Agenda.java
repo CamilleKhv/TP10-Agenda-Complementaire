@@ -7,10 +7,10 @@ import java.util.*;
  * Description : An agenda that stores events
  */
 public class Agenda {
-    private ArrayList<Event> lesEvenements = new ArrayList<Event>();
+    private ArrayList<Event> theEvents = new ArrayList<Event>();
 
     public Agenda() {
-        this.lesEvenements = null;
+        this.theEvents = null;
     }
 
     /**
@@ -20,19 +20,13 @@ public class Agenda {
      */
 
     public void addEvent(Event e) {
-        lesEvenements.add(e);
+        theEvents.add(e);
     }
 
-    /**
-     * Computes the events that occur on a given day
-     *
-     * @param day the day toi test
-     * @return a list of events that occur on that day
-     */
 
     public List<Event> eventsInDay(LocalDate day) {
         ArrayList<Event> eventThisDay = new ArrayList<Event>();
-        for (Event e: lesEvenements){
+        for (Event e: theEvents){
             if (e.isInDay(day)) eventThisDay.add(e);
         }
         return eventThisDay;
